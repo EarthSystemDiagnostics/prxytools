@@ -2,22 +2,34 @@
 % Please edit documentation in R/ImpulseResponse.BergerHeath.R
 \name{ImpulseResponse.BergerHeath}
 \alias{ImpulseResponse.BergerHeath}
-\title{Depth solution for Berger and Heath; e.g. page 65 in Officer and Lynch}
+\title{Bioturbation impulse response}
 \usage{
 ImpulseResponse.BergerHeath(z, d, z0 = 0)
 }
 \arguments{
-\item{z}{depth}
+\item{z}{numeric vector of depths.}
 
-\item{d}{mixing depth}
+\item{d}{mixing depth in the same units as \code{depth}.}
 
-\item{z0}{epth of the pulse without bioturbation}
+\item{z0}{depth of the pulse without bioturbation in the same units as
+\code{depth}.}
 }
 \value{
-weights of the impulse response function
+The weights of the bioturbation impulse response function.
 }
 \description{
-Depth solution for Berger and Heath; e.g. page 65 in Officer and Lynch
+Calculate the impulse response function of bioturbation for a given mixing
+and pulse depth.
+}
+\details{
+This is an implementation of the solution from Berger and Heath (1968); as
+given e.g. on page 65 in Officer and Lynch.
+}
+\references{
+Berger, W. and Heath, G. R.: Vertical Mixing in Pelagic Sediments,
+J. Mar. Research 26, 135–143, 1968.
+
+Officer and Lynch.
 }
 \author{
 Thomas Laepple
