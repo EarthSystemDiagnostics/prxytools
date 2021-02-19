@@ -149,9 +149,9 @@ CalibrateAge <- function(df, age.14C = "age.14C",
                                         "intcal20", "marine20", "shcal20",
                                         "normal"))
 
-  if (is.null(offset)){
+  if (is.null(offset)) {
     df$offset <- 0
-  } else{
+  } else {
     df$offset <- df[[offset]]
   }
 
