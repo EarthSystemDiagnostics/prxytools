@@ -10,7 +10,7 @@ CalibrateAge(
   age.14C.se = "age.14C.se",
   curve = "intcal20",
   return.type = "df",
-  offset = 0
+  offset = NULL
 )
 }
 \arguments{
@@ -28,7 +28,9 @@ error 14C age uncertainty; defaults to \code{"age.14C.se"}.}
 return only the ammended dataframe (\code{"df"}) or additionally the list
 of PDFs (\code{"lst"}); defaults to (\code{"df"}).}
 
-\item{offset}{numeric; optional offset applied to all 14C ages; defaults to 0.}
+\item{offset}{character; name of an optional additional column in \code{df}
+supplying a variable offset applied to all 14C ages; the default
+\code{NULL} means to apply no offset.}
 }
 \value{
 A dataframe or list.

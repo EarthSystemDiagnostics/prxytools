@@ -108,7 +108,9 @@ CalcifTemp <- function(d18Oc, d18Ow) {
 #' @param return.type character; signal the amount of returned information:
 #'   return only the ammended dataframe (\code{"df"}) or additionally the list
 #'   of PDFs (\code{"lst"}); defaults to (\code{"df"}).
-#' @param offset numeric; optional offset applied to all 14C ages; defaults to 0.
+#' @param offset character; name of an optional additional column in \code{df}
+#'   supplying a variable offset applied to all 14C ages; the default
+#'   \code{NULL} means to apply no offset.
 #' @return A dataframe or list.
 #' @author Andrew Dolman
 #' @examples
@@ -140,16 +142,22 @@ CalcifTemp <- function(d18Oc, d18Ow) {
 CalibrateAge <- function(df, age.14C = "age.14C",
                          age.14C.se = "age.14C.se",
                          curve = "intcal20",
-                         return.type = "df", offset = 0){
+                         return.type = "df", offset = NULL) {
 
   return.type <- match.arg(return.type, choices = c("df", "lst"))
   curve <- match.arg(curve, choices = c("intcal13", "shcal13", "marine13",
                                         "intcal20", "marine20", "shcal20",
                                         "normal"))
 
-  cal.ages <- lapply(1:nrow(df), function(x) {
+  if (is.null(offset)){
+    df$offset <- 0
+  } else{
+    df$offset <- df[[offset]]
+  }
+
+  cal.ages <- lapply(1 : nrow(df), function(x) {
     tryCatch(Bchron::BchronCalibrate(
-      ages = df[[age.14C]][x] + offset,
+      ages = df[[age.14C]][x] + df[["offset"]][x],
       ageSds = df[[age.14C.se]][x],
       calCurves = curve,
       ids = x),
