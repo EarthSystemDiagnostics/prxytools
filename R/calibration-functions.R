@@ -171,7 +171,7 @@ CalibrateAge <- function(df, age.14C = "age.14C",
   # Use mean and sd of empirical PDFs as point estimates of calendar ages
   df$age.14C.cal <- sapply(cal.ages, function(x) {
     if (is.na(x) == FALSE) {
-      stattools::SummariseEmpiricalPDF(x[[1]]$ageGrid, x[[1]]$densities)["mean"]
+      stattools::SummariseEmpiricalPDF(x[[1]]$ageGrid, x[[1]]$densities)["median"]
     } else {
       NA
     }
