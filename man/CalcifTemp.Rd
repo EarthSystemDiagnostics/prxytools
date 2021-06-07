@@ -22,6 +22,9 @@ the Paleotemperature Equation).
 \examples{
   CalcifTemp(d18OcFromd18OwTemp(d18Ow = 0.6, 1:26), 0.6)
 }
+\seealso{
+\code{\link{d18OwFromSalinity}}, \code{\link{d18OcFromd18OwTemp}}
+}
 \author{
 Andrew Dolman
 }

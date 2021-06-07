@@ -84,6 +84,7 @@ d18OcFromd18OwTemp <- function(d18Ow, Temp) {
 #' @author Andrew Dolman
 #' @examples
 #'   CalcifTemp(d18OcFromd18OwTemp(d18Ow = 0.6, 1:26), 0.6)
+#' @seealso \code{\link{d18OwFromSalinity}}, \code{\link{d18OcFromd18OwTemp}}
 #' @export
 CalcifTemp <- function(d18Oc, d18Ow) {
   16.9 - 4.38 * (d18Oc - (d18Ow - 0.27)) + 0.1 * (d18Oc - (d18Ow - 0.27))^2
