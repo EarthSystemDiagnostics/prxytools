@@ -1,13 +1,13 @@
 Package: prxytools
-Title: An R package of tools to assist with proxy analyses
+Title: Tools to Assist with Proxy Analyses
 Version: 0.2.0
-Author:
-  Thomas Muench [aut, cre],
-  Andrew Dolman [aut],
-  Thomas Laepple [aut]
-Maintainer: Thomas Muench <thomas.muench@awi.de>
-Description: This package contains various functions to
-    assist with analysing different kinds of proxy data.
+Authors@R: c(
+    person("Thomas", "Muench", email = "thomas.muench@awi.de",
+           role = c("aut", "cre")),
+    person("Andrew", "Dolman", role = "aut"),
+    person("Thomas", "Laepple", role = "aut"))
+Description: Analysing different kinds of proxy data made simpler by using the
+    various functions from 'prxytools'.
 License: file LICENSE
 URL: https://github.com/EarthSystemDiagnostics/prxytools
 BugReports:
