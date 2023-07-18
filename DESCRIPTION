@@ -1,6 +1,6 @@
 Package: prxytools
 Title: An R package of tools to assist with proxy analyses
-Version: 0.1.2
+Version: 0.2.0
 Author:
   Thomas Muench [aut, cre],
   Andrew Dolman [aut],
@@ -22,3 +22,6 @@ LazyData: true
 RoxygenNote: 7.1.1
 Remotes:
     earthsystemdiagnostics/stattools
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

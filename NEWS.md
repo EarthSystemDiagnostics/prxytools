@@ -1,3 +1,8 @@
+# prxytools 0.2.0
+
+* New function `AverageByIndex()` added which allows to calculate bin averages
+  defined by vector index positions.
+
 # prxytools 0.1.2
 
 * Allow variable offsets of "reservoir ages" in radiocarbon age calibration with
