@@ -1,14 +1,18 @@
 Package: prxytools
 Title: Tools to Assist with Proxy Analyses
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: c(
     person("Thomas", "Muench", email = "thomas.muench@awi.de",
            role = c("aut", "cre")),
     person("Andrew", "Dolman", role = "aut"),
-    person("Thomas", "Laepple", role = "aut"))
+    person("Thomas", "Laepple", role = "aut"),
+    person("Zhibing", "He", role = "cph",
+           comment = "Author of included code for LocatePeaks function"),
+    person("Dan", "Cheng", role = "cph",
+           comment = "Author of included code for LocatePeaks function"))
 Description: Analysing different kinds of proxy data made simpler by using the
     various functions from 'prxytools'.
-License: file LICENSE
+License: GPL (>= 3)
 URL: https://github.com/EarthSystemDiagnostics/prxytools
 BugReports:
     https://github.com/EarthSystemDiagnostics/prxytools/issues
