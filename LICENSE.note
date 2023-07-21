@@ -1,0 +1,5 @@
+The prxytools package as a whole is distributed under GPL (>= 3). The prxytools
+package includes other open source software components. The following is a list
+of these components:
+
+* LocatePeaks: Code adapted from function which.peaks in package mSTEM: GPL-3
