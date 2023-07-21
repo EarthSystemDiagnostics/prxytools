@@ -1,3 +1,8 @@
+# prxytools 0.3.0
+
+* New function `LocatePeaks()` added which allows to find the positions of local
+  maxima or minima in a sequence.
+
 # prxytools 0.2.0
 
 * New function `AverageByIndex()` added which allows to calculate bin averages
