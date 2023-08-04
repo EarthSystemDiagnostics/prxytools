@@ -3,3 +3,4 @@ package includes other open source software components. The following is a list
 of these components:
 
 * LocatePeaks: Code adapted from function which.peaks in package mSTEM: GPL-3
+* Lag: Code taken from function Lag in package Hmisc: GPL (>=2)

@@ -1,3 +1,8 @@
+# prxytools 0.4.0
+
+* New function `Lag()` to shift numeric, character or factor vectors by a
+  specified number of elements.
+
 # prxytools 0.3.0
 
 * New function `LocatePeaks()` added which allows to find the positions of local

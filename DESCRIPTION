@@ -1,6 +1,6 @@
 Package: prxytools
 Title: Tools to Assist with Proxy Analyses
-Version: 0.3.0
+Version: 0.4.0
 Authors@R: c(
     person("Thomas", "Muench", email = "thomas.muench@awi.de",
            role = c("aut", "cre")),
@@ -9,7 +9,9 @@ Authors@R: c(
     person("Zhibing", "He", role = "cph",
            comment = "Author of included code for LocatePeaks function"),
     person("Dan", "Cheng", role = "cph",
-           comment = "Author of included code for LocatePeaks function"))
+           comment = "Author of included code for LocatePeaks function"),
+    person("Frank E", "Harrel Jr", role = "cph",
+           comment = "Author of included original code for Lag function"))
 Description: Analysing different kinds of proxy data made simpler by using the
     various functions from 'prxytools'.
 License: GPL (>= 3)
