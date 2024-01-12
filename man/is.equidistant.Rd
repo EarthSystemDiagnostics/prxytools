@@ -31,5 +31,5 @@ is.equidistant(c(1 : 10, 18))
 
 }
 \author{
-Thomas Münch
+Andrew Dolman, Thomas Münch
 }

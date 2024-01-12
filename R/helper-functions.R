@@ -10,7 +10,7 @@
 #' @param x a numeric vector.
 #' @return a logical value: \code{TRUE} if \code{x} has constant resolution,
 #'   \code{FALSE} otherwise.
-#' @author Thomas Münch
+#' @author Andrew Dolman, Thomas Münch
 #' @examples
 #'
 #' is.equidistant(1 : 10)
