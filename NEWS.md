@@ -1,3 +1,12 @@
+# prxytools 0.5.0
+
+* New auxiliary function `is.equidistant()` to test whether a vector (e.g. depth
+  vector or time series) has equidistant steps, i.e. resolution. The
+  implementation includes a numerical tolerance that accounts for the machine
+  respresentation of floating-point numbers, which circumvents the problems
+  popular methods of checking equidistance have using, e.g., `sd()` or
+  `unique()` on the difference vector.
+
 # prxytools 0.4.0
 
 * New function `Lag()` to shift numeric, character or factor vectors by a
