@@ -1,6 +1,6 @@
 Package: prxytools
 Title: Tools to Assist with Proxy Analyses
-Version: 0.4.0
+Version: 0.5.0
 Authors@R: c(
     person("Thomas", "Muench", email = "thomas.muench@awi.de",
            role = c("aut", "cre")),
